@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Velkommen til ITbog-genbrugsbutikken</h1>
+
+  <p>Her på siden kan du finde brugte IT bøger</p>
+  <form action="/opretbog", method="POST">
+
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="forfatter">Forfatter:</label>
+    <input type="text" id="forfatter" name="forfatter" required>
+
+    <label for="forlag">Forlag:</label>
+    <input type="text" id="forlag" name="forlag" required>
+
+    <label for="udgave">Udgave:</label>
+    <input type="text" id="udgave" name="udgave" required>
+
+    <label for="pris">Pris:</label>
+    <input type="text" id="pris" name="pris" required>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>

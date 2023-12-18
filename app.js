@@ -5,7 +5,9 @@ var path = require('path');
 var indexRouter = require('./routes/index');
 var computersprogRouter = require('./routes/computersprog');
 var webapplikationerRouter = require('./routes/webapplikationer');
-var computersprog1Router = require('./routes/computersprog1');
+//var computersprog1Router = require('./routes/computersprog1');
+var webapplikationer1Router = require('./routes/webapplikationer1');
+var opretbogRouter = require('./routes/opretbog');
 
 var app = express();
 
@@ -20,7 +22,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/computersprog', computersprogRouter);
 app.use('/webapplikationer', webapplikationerRouter);
-app.use('/computersprog1', computersprog1Router);
+//app.use('/computersprog1', computersprog1Router);
+app.use('/webapplikationer1', webapplikationer1Router);
+app.use('/opretbog', opretbogRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

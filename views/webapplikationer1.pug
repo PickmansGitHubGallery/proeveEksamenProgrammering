@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  table
+    tr
+      th Titel
+      th Forfatter
+      th Forlag 
+      th Udgave
+      th Pris
+    each bog in bog
+      tr
+        td= bog.titel
+        td= bog.forfatter
+        td= bog.forlag
+        td= bog.udgave
+        td= bog.pris
