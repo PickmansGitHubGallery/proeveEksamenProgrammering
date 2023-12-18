@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Computersprog1</h1>
+  <a href="index.html">Til Forsiden</a>
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Forfatter</th>
+        <th>Forlag</th>
+        <th>Udgave</th>
+        <th>Pris</th>
+      </tr>
+    </thead>
+    <tbody>
+      <script>
+        var books = [
+          { title: "Introduction to Java", forfatter: "Liang, Daniel Y", forlag: "Pearson", udgave: 11, pris: 250 },
+          { title: "Python Crash Course", forfatter: "Eric Matthes", forlag: "No starch", udgave: 2, pris: 300 },
+          { title: "Life on the Line", forfatter: "Som Bud Y Else", forlag: "Not Ours", udgave: 1, pris: 100 }
+        ];
+
+        for (var i = 0; i < books.length; i++) {
+          var book = books[i];
+          document.write("<tr>");
+          document.write("<td>" + book.title + "</td>");
+          document.write("<td>" + book.forfatter + "</td>");
+          document.write("<td>" + book.forlag + "</td>");
+          document.write("<td>" + book.udgave + "</td>");
+          document.write("<td>" + book.pris + "</td>");
+          document.write("</tr>");
+        }
+      </script>
+    </tbody>
+  </table>
+</body>
+</html>
+
